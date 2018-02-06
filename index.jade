@@ -17,11 +17,11 @@ html(lang="en")
     body
         #update-status
             p.
-                Last updated on March 21, 2016
+                Last updated on February 06, 2018
         .heading
             h1 #[span #{firstName}] #{lastName}
-            h3 #[a(href="#") debarghyadas.com] | #[a(href="#") fb.co/dd]
-            h3 #[a(href="#") deedy@fb.com | 607.379.5733 | dd367@cornell.edu]
+            h3 #[a(href="https://amandeep511997.github.io") amandeep511997.github.io]
+            h3 #[a(href="mailto:amandeep511997@gmail.com") amandeep511997@gmail.com | +918527948696 ]
         hr
         .content
             ////////////////////////
@@ -31,23 +31,24 @@ html(lang="en")
                 ///////// Begin Section: Education /////////
                 h1 Education
                 // Begin Subsection
-                h2 Cornell University
-                h3 MEng in Computer Science
-                h4 Dec 2014 | Ithaca, NY
+                h2 NSIT, UNIVERSITY OF DELHI
+                h3 BTECH
+                h4 Expected Apr 2019
+                h4 Dwarka, New Delhi
+                h4 Agg. Percentage: 76.94%
                 // Space between two subsections
                 br
                 // Begin Subsection
-                h2 Cornell University
-                h3 BS in Computer Science
-                h4 May 2014 | Ithaca, NY
-                p College of Engineering
-                p Magna Cum Laude
-                p.lead Cum. GPA: 3.83/4.0
-                p.lead Major GPA: 3.9/4.0
+                h2 S S MOTA SINGH SCHOOL
+                h3 SENIOR SECONDARY
+                h4 Passed Mar 2015 | New Delhi
+                h4 Agg. Percentage: 96.80%
                 br
                 // Begin Subsection
-                h2 La Martiniere for Boys
-                h4 Grad. May 2011| Kolkata, India
+                h2 S S MOTA SINGH SCHOOL
+                h3 HIGH SCHOOL
+                h4 Passed Mar 2013 | New Delhi
+                h4 Cum. GPA: 9.2/10.0
                 ///////// Begin Section: Links /////////
                 h1 Links
                 // List follows
@@ -55,122 +56,94 @@ html(lang="en")
                     - for (var i = 0; i < links.length; i++)
                         li #{links[i][0]}://#[a(href="#{links[i][1]}") #{links[i][2]}]
                 
-                ///////// Begin Section: Coursework /////////
-                h1 Coursework
-                // Begin Subsection
-                h2 Graduate
-                - for (var i = 0; i < graduateCourses.length; i++)
-                    p= graduateCourses[i]
-                
-                // Begin Subsection
-                h2 Undergraduate
-                - for (var i = 0; i < undergradCourses.length; i++)
-                    p= undergradCourses[i]
-                    - if (i == 4)
-                        p.italic.bold (Research Asst. & Teaching Asst 2x)
-
                 ///////// Begin Section: Skills /////////
                 h1 Skills
                 // Begin Subsection
-                h2 Programming
-                // Use no-overlap if inline list overlaps with any element
-                // above it
-                h4.no-overlap Over 5000 lines
-                // Note: Use span with li elements so the bullets can be closer
-                //       than the browser default value. Refer:
-                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
-                ul.inline
-                    - for (var i = 0; i < languagesStrong.length; i++)
-                        li
-                            span= languagesStrong[i]
+                h2 PROGRAMMING
+                h3 C, C++, Ruby, Python(Basic)
+
+                h2 FRAMEWORKS
+                h3 Rails, Bootstrap, Materialize
+
+                h2 RELEVANT SKILLS
+                h3 Algorithms, Data Structures, Git, Backend Web Development
+
+                //////// Begin Secction: Online Courses /////
+                h1 Online Courses
+                h3 Introduction to Algorithms
+                p (By MIT 6.046 – at MITOCW)
+                h3 Git and Github
+                p (By Udacity)
                 
-                .clearfix
-                
-                h4.no-overlap Familiar
-                ul.inline
-                    - for (var i = 0; i < languagesFamiliar.length; i++)
-                        li
-                            span= languagesFamiliar[i]
+                //////// Begin Secction: Interests /////
+                h1 Interests
+                h3 Reading, Sketching, Cooking
             ////////////////////////
             /// Left Column ends ///
             ////////////////////////
             // Right Column Begins//
             ////////////////////////
             .right-column
-                ///////// Begin Section: Experience /////////
-                h1 Experience
+                ///////// Begin Section: Projects /////////
+                h1 Projects
                 // Begin Subsection
-                h2 Facebook | #[span Software Engineer]
-                h3 Jan 2015 - Present | New York, NY
+                h2 #[a(href="https://rubygems.org/gems/hackerearth_api", style="font-weight:bold") Hackerearth API Gem]
+                h3 Jan 2018 - Feb 2018
+                ul
+                    li Created a Ruby library for the official #[a(href="https://www.hackerearth.com/docs/wiki/developers/v3/") Hackerearth API]
+                    li Published gem on RubyGems, over 400+ downloads(Open Sourced on #[a(href="https://amandeep511997.github.io/hackerearth_api/") Github])
+                    li. 
+                        Developed the gem following #[a(href="https://travis-ci.org/amandeep511997/hackerearth_api") Test Driven Development]
                 // Space between subsections, in case if they are too close
                 br
                 // Begin Subsection
-                h2 Coursera | #[span KPCB Fellow + Software Engineering Intern]
-                h3 June 2014 - Sep 2014 | Mountain View, CA
+                h2 #[a(href="https://amandeep511997.github.io/codesnippetsAPI/", style="font-weight:bold") Codesnippets API] 
+                h3 Jan 2018 - Jan 2018 
                 ul
-                    li 52 out of 2500 applicants chosen to be a #[a(href="#") KPCB] Fellow 2014
-                    li Led and shipped Yoda - the admin interface for the new Phoenix platform
+                    li Developed a versioned RESTful API from scratch in Rails
+                    li Added token based authentication using JWT
+                    li Wrote integration test for requests using RSpec and capybara
                     li. 
-                        Full-stack developer - Wrote and reviewed code for JS
-                        using Backbone, Jade, Stylus and Require and Scala using Play
-                // Begin Subsection
-                h2 Google | #[span Software Engineering Intern]
-                h3 May 2013 - Aug 2013 | Mountain View, CA
-                ul
-                    li.
-                        Worked on the YouTube Captions team, in Javascript and Python to plan
-                        design and develop the full stack to add and edit Automatic Speech
-                        Recognition captions. In Production.
-                    li.
-                        Created a backbone.js-like framework for the Captions editor.
-                // Begin Subsection
-                h2 Phabricator | #[span Open Source Contributor & Team Leader]
-                h3 Jan 2013 - May 2013 | Palo Alto, CA & Ithaca, NY
-                ul
-                    li.
-                        Phabricator is used daily by Facebook, Dropbox, Quora, Asana
-                        and more
-                    li.
-                        I created the Meme Generator and more in PHP and Shell
-                    li.
-                        Led a team from MIT, Cornell, IC London and UHelsinki for the
-                        project
-                ///////// Begin Section: Research /////////
-                h1 Research
-                // Begin Subsection
-                h2 Cornell Robot Learning Lab | #[span Researcher]
-                h3 Jan 2014 - Jan 2015 | Ithaca, NY
-                p.
-                    Worked with #[a(href="#") Ashesh Jain] and #[a(href="#") Prof Ashutosh Saxena] to create PlanIt,
-                    a tool which learns from large scale preference feedback to plan
-                    robot trajectories in human environments
+                        Created usage documentation(Open sourced on #[a(href="https://github.com/amandeep511997/codesnippetsAPI") Github])
+                // Space between subsections, in case if they are too close
                 br
                 // Begin Subsection
-                h2 Cornell Phonetics Lab | #[span Head Undergraduate Researcher]
-                h3 May 2012 - May 2013 | Ithace, NY
-                p.
-                    Led the development of QuickTongue, the first ever breakthrough
-                    tongue-controlled game with Prof Sam Tilsen to aid in Linguistics
-                    research
-                ///////// Begin Section: Awards /////////
-                h1 Awards
-                table(cellspacing="0", cellpadding="0")
-                    tbody
-                        - for (var i = 0; i < table.length; i++)
-                            tr
-                                - for (var j = 0; j < table[i].length; j++)
-                                    td!= table[i][j]
-                ///////// Begin Section: Publications /////////
-                h1 Publications
-                ol.publications-list
+                h2 #[a(href="http://codesnippets.org/", style="font-weight:bold") Codesnippets] 
+                h3 Nov 2017 - Jan 2018
+                ul
+                    li Developed a code sharing platform in Rails
                     li.
-                        #[a(href="#") A. Jain], #[a(href="#") D.Das] and #[a(href="#") A.Saxena]. Planit: A crowdsourcing approach
-                        for learning to plan paths from large scale preference
-                        feedback. #[span.italic Tech Report, ICRA, in press]
-                    li.
-                        S. TIlsen, D.Das, and B.McKee. Real-time articulatory
-                        biofeedback with electromagnetic articulography.
-                        #[span.italic Linguistics Vanguard, in press.]
+                        Wrote integration testing for some features using RSpec, capybara and factoryGirl
+                    li Used Bootstrap as front-end framework
+                    li Deployed using puma and nginx on AWS
+                // Space between subsections, in case if they are too close
+                br
+                // Begin Subsection
+                h2 #[a(href="https://github.com/amandeep511997/chess", style="font-weight:bold") Chess] 
+                h3 Dec 2017 - DEC 2017
+                ul
+                    li Developed a chess game using OOPS and MVC pattern in Python
+                    li Used Tkinter module for adding GUI
+                // Space between subsections, in case if they are too close
+                br
+                // Begin Subsection
+                h2 #[a(href="https://github.com/amandeep511997/Text-Editor", style="font-weight:bold") Text Editor]
+                h3 Aug 2017 - Aug 2017
+                ul
+                    li Developed a rich text editor in Python, implemented all required tools for working on text
+                    li Used Tkinter module for adding GUI and os module to add all I/O operations
+                // Space between subsections, in case if they are too close
+                br
+                // Begin Subsection
+                h2 #[a(href="http://www.grovermatrimonial.com/", style="font-weight:bold") Grover Matrimonials]
+                h3 Nov 2017 - Dec 2017
+                ul
+                    li Developed a fully functional matrimonial site for a client
+                    li Built using Rails and Materialize
+                ///////// Begin Section: Achivements ///////
+                h1 Achivements
+                h2 SCHOOL TOPPER | CBSE 2015
+                h3 Was given scholarship for pursuing further studies
                 ////////////////////////
                 /// Right Column Ends //
                 ////////////////////////
