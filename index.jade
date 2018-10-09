@@ -17,7 +17,7 @@ html(lang="en")
     body
         #update-status
             p.
-                Last updated on May 22, 2018
+                Last updated on Oct 9, 2018
         .heading
             h1 #[span #{firstName}] #{lastName}
             h3 #[a(href="https://amandeep511997.github.io") amandeep511997.github.io] | #[a(href="mailto:amandeep511997@gmail.com") amandeep511997@gmail.com] | +918527948696
@@ -48,18 +48,12 @@ html(lang="en")
                 h3 HIGH SCHOOL
                 h4 Passed Mar 2013 | New Delhi
                 h4 Cum. GPA: 9.2/10.0
-                ///////// Begin Section: Links /////////
-                h1 Links
-                // List follows
-                ul.nostyle
-                    - for (var i = 0; i < links.length; i++)
-                        li #{links[i][0]}://#[a(href="#{links[i][1]}") #{links[i][2]}]
                 
                 ///////// Begin Section: Skills /////////
                 h1 Skills
                 // Begin Subsection
                 h2 PROGRAMMING
-                h3 C, C++, Ruby, Python(Basic)
+                h3 C, C++, Ruby, Python
 
                 h2 FRAMEWORKS
                 h3 Rails, Bootstrap, Materialize
@@ -67,12 +61,35 @@ html(lang="en")
                 h2 RELEVANT SKILLS
                 h3 Algorithms, Data Structures, Git, Backend Web Development
 
+                ///////// Begin Section: Open Source /////////
+                h1 OPEN SOURCE 
+                // Begin Subsection
+                h2 #[a(href="https://github.com/e-maxx-eng/e-maxx-eng", style="font-weight:bold") e-maxx-eng] 
+                p (Translated version - russian algorithmic site)
+                h4 Contributed in translations, added new articles and images for better understanding of algorithms 
+
+                ///////// Begin Section: Links /////////
+                h1 Links
+                // List follows
+                ul.nostyle
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}") #{links[i][2]}]
+
                 //////// Begin Secction: Online Courses /////
                 h1 Online Courses
                 h3 Introduction to Algorithms
                 p (By MIT 6.046 – at MITOCW)
                 h3 Git and Github
                 p (By Udacity)
+                h3 The Bits and Bytes of Computer Networking
+                p (By Google)
+                h3 Intro to Machine Learning
+                p (By Udacity)
+
+                ///////// Begin Section: Achivements ///////
+                h1 Achivements
+                h2 SCHOOL TOPPER | CBSE 2015
+                h4 Was given scholarship for pursuing further studies
                 
                 //////// Begin Secction: Interests /////
                 h1 Interests
@@ -101,7 +118,7 @@ html(lang="en")
                 h3 Feb 2018 - Apr 2018
                 ul
                     li Carried a case study on project management system for issue tracking tickets, using Database Management concepts.
-                    li Developed an application for the same in Rails following #[a(href="https://travis-ci.org/amandeep511997/ticketee") Test Driven Development].
+                    li Developed an application for the same in Rails following #[a(href="https://travis-ci.org/amandeep511997/ticketee") TDD].
                     li. 
                         Added various features for managing projects development cycle and tracking its progress.
                 // Space between subsections, in case if they are too close
@@ -111,7 +128,7 @@ html(lang="en")
                 h3 Jan 2018 - Feb 2018
                 ul
                     li Created a Ruby library for the official #[a(href="https://www.hackerearth.com/docs/wiki/developers/v3/") Hackerearth API]
-                    li Published gem on RubyGems, over 500+ downloads(Open Sourced on #[a(href="https://amandeep511997.github.io/hackerearth_api/") Github])
+                    li Published gem on RubyGems, over 600+ downloads(Open Sourced on #[a(href="https://amandeep511997.github.io/hackerearth_api/") Github])
                     li. 
                         Developed the gem following #[a(href="https://travis-ci.org/amandeep511997/hackerearth_api") Test Driven Development]
                 // Space between subsections, in case if they are too close
@@ -160,10 +177,7 @@ html(lang="en")
                 ul
                     li Developed a fully functional matrimonial site for a client
                     li Built using Rails and Materialize
-                ///////// Begin Section: Achivements ///////
-                h1 Achivements
-                h2 SCHOOL TOPPER | CBSE 2015
-                h3 Was given scholarship for pursuing further studies
+                
                 ////////////////////////
                 /// Right Column Ends //
                 ////////////////////////
